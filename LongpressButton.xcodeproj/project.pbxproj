@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		429564F4207D57FF00F161AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		42B8DD42207BAC0E008AE914 /* LongPressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButton.swift; sourceTree = "<group>"; };
 		42B8DD44207BAC53008AE914 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		42E4602B20794C0D005B938D /* LongpressButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongpressButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		42E4602220794C0D005B938D = {
 			isa = PBXGroup;
 			children = (
+				429564F4207D57FF00F161AF /* README.md */,
 				42E4602D20794C0D005B938D /* LongpressButton */,
 				42E4602C20794C0D005B938D /* Products */,
 			);
