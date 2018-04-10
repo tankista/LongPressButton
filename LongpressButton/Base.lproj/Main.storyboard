@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJo-kn-IDQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Long Press Button-->
+        <scene sceneID="clB-vc-fyl">
+            <objects>
+                <viewController id="703-4V-yAM" customClass="RootViewController" customModule="LongpressButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="502-Ir-ELC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmy-4U-iFr" customClass="LongPressButton" customModule="LongpressButton" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZoM-88-511"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-eY-riD">
+                                <rect key="frame" x="135" y="452" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niW-Jb-y29">
+                                <rect key="frame" x="180" y="64" width="15" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="dX1-DS-RJq"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-k6-hHb">
+                                <rect key="frame" x="195" y="452" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enabled:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7h-6B-no5">
+                                <rect key="frame" x="111" y="415" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-PK-bkl">
+                                <rect key="frame" x="195" y="410" width="51" height="31"/>
+                                <connections>
+                                    <action selector="enabledChanged:" destination="703-4V-yAM" eventType="valueChanged" id="DI3-G5-0Ze"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xmy-4U-iFr" firstAttribute="top" secondItem="8H5-eY-riD" secondAttribute="bottom" constant="144" id="5bH-5y-dsN"/>
+                            <constraint firstItem="8H5-eY-riD" firstAttribute="top" secondItem="f7h-6B-no5" secondAttribute="bottom" constant="16" id="9zE-1b-GQi"/>
+                            <constraint firstItem="qk4-k6-hHb" firstAttribute="baseline" secondItem="8H5-eY-riD" secondAttribute="baseline" id="A8h-kh-IFc"/>
+                            <constraint firstItem="Xmy-4U-iFr" firstAttribute="top" secondItem="niW-Jb-y29" secondAttribute="bottom" id="G4m-34-we5"/>
+                            <constraint firstItem="niW-Jb-y29" firstAttribute="top" secondItem="iAZ-4m-2z3" secondAttribute="top" id="Je7-h1-jEs"/>
+                            <constraint firstItem="niW-Jb-y29" firstAttribute="leading" secondItem="8H5-eY-riD" secondAttribute="trailing" id="Kqd-rQ-uYT"/>
+                            <constraint firstItem="iAZ-4m-2z3" firstAttribute="bottom" secondItem="Xmy-4U-iFr" secondAttribute="bottom" id="QC7-VB-2Ab"/>
+                            <constraint firstItem="Xmy-4U-iFr" firstAttribute="centerX" secondItem="iAZ-4m-2z3" secondAttribute="centerX" id="Rg9-uJ-Bie"/>
+                            <constraint firstItem="qk4-k6-hHb" firstAttribute="leading" secondItem="niW-Jb-y29" secondAttribute="trailing" id="XtL-IC-DWT"/>
+                            <constraint firstItem="niW-Jb-y29" firstAttribute="centerX" secondItem="iAZ-4m-2z3" secondAttribute="centerX" id="b1M-eo-eVc"/>
+                            <constraint firstItem="Xmy-4U-iFr" firstAttribute="leading" secondItem="iAZ-4m-2z3" secondAttribute="leading" id="epD-Xa-Xis"/>
+                            <constraint firstItem="X3L-PK-bkl" firstAttribute="centerY" secondItem="f7h-6B-no5" secondAttribute="centerY" id="jrf-HB-3iW"/>
+                            <constraint firstItem="niW-Jb-y29" firstAttribute="leading" secondItem="f7h-6B-no5" secondAttribute="trailing" constant="2" id="mk2-O7-qvC"/>
+                            <constraint firstItem="iAZ-4m-2z3" firstAttribute="trailing" secondItem="Xmy-4U-iFr" secondAttribute="trailing" id="r8u-S8-6pR"/>
+                            <constraint firstItem="X3L-PK-bkl" firstAttribute="leading" secondItem="niW-Jb-y29" secondAttribute="trailing" id="zU5-yz-DjG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iAZ-4m-2z3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Long Press Button" largeTitleDisplayMode="always" id="gBi-gB-ma2"/>
+                    <connections>
+                        <outlet property="button" destination="Xmy-4U-iFr" id="pEU-Zv-qTX"/>
+                        <outlet property="enabledSwitch" destination="X3L-PK-bkl" id="CRD-E6-1nn"/>
+                        <outlet property="stateLabel" destination="qk4-k6-hHb" id="AS1-OF-axf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="-243.32833583208398"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2hS-a8-wXl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PJo-kn-IDQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Qo-qZ-J2X">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="703-4V-yAM" kind="relationship" relationship="rootViewController" id="R17-UQ-a0p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9z4-2E-iuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101.59999999999999" y="-243.32833583208398"/>
+        </scene>
+    </scenes>
+</document>
